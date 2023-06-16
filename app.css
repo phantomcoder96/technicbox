@@ -1,0 +1,264 @@
+/* Reset default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: "Calendas Plus", Arial, sans-serif; /* Set the font to Calendas Plus */
+    color: #fff; /* Set the text color to white */
+}
+  
+/* Global styles */
+body {
+    font-family: "Calendas Plus", Arial, sans-serif; /* Set the font to Calendas Plus */
+    line-height: 1.6;
+    background-color: #1672cb;
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Center the logo and title vertically */
+    justify-content: space-between; /* Align the logo and title to the left, navigation to the right */
+    background-color: #1672cb;
+    padding: 20px;
+  }
+  
+  header .logo {
+    margin-right: 10px; /* Add some spacing between the logo and the title */
+    margin-left: 300px; /* PLACE TO CHANGE LOGO POSITION */
+  }
+  
+  header .logo img {
+    max-height: 50px; /* Adjust the max height of the logo as needed */
+  }
+  
+  header h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the text in the h1 element */
+    margin-right: 700px;
+  }
+  
+  nav.top-nav {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Center the navigation vertically */
+    justify-content: flex-end; /* Move the navigation bar to the right */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    margin-right: 1500px; /* Adjust the margin-right value as needed */
+    padding: 0;
+}
+
+nav.top-nav button {
+    color: #fff;
+    background: none;
+    border: none;
+    font-family: "Calendas Plus", Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 20px; /* Add margin between the buttons */
+    padding: 0; /* Remove the padding */
+}
+
+nav.top-nav ul {
+    display: flex; /* Display the buttons in a row */
+    align-items: center; /* Center the buttons vertically */
+    padding: 0; /* Remove the padding */
+}
+
+nav.top-nav li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Remove the bullet points */
+}
+
+nav.top-nav a {
+    display: none; /* Hide the anchor tags for buttons */
+}
+  
+  
+
+section {
+  background-color: #1672cb;
+    color: #1672cb;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Center the content in the sections */
+}
+
+footer {
+  background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styles specific to contact.html */
+
+h1 { color: #ffffff; }
+h2 { color: #ffffff; }
+p { color: #ffffff; }
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-input {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-textarea {
+  width: 300px;
+  height: 150px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-submit {
+  padding: 10px 20px;
+  background-color: #1672cb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-submit:hover {
+  background-color: #13579d;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Styles specific to index.html */
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container .content {
+    max-width: 50%; /* Set the maximum width to 50% of the container */
+    margin: 0;
+    text-align: left; /* Align the content to the left */
+  }
+  
+  .container .content h2,
+  .container .content p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    color: #1672cb;
+  }
+  
+  .container .content p {
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    width: 50%; /* Set the width to 50% of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px; /* Add margin to the left side */
+    margin-top: 1050px;
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Make the image responsive */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .background-image{
+    background-image: url("https://www.globalgiving.org/pfil/24366/pict_large.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*
+  #showcase{
+    background-image: url("https://www.globalgiving.org/pfil/24366/pict_large.jpg");
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    justify-content:left;
+    align-items:center;
+  }
+  */
+
+  
+/* Styles specific to sample-content.html */
+#sample-content h2 {
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading */
+    color: #1672cb;
+}
+
+/* Styles specific to about.html */
+
+#about h2 {
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading */
+}
+
+/* Styles specific to contact.html */
+#contact h2 {
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading */
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+}
+
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+#contact form textarea {
+    height: 100px;
+}
+
+#contact form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/* Add more CSS styles as needed */

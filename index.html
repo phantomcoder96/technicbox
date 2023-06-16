@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  
+  <title>TechnicBox</title>
+  <link rel="stylesheet" type="text/css" href="app.css">
+  <link href="https://fonts.googleapis.com/css2?family=Calendas+Plus&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="showcase">
+    <div class="logo">
+      <a href="#landing">
+        <img src="logo.png" alt="Logo">
+      </a>
+    </div>
+    <h1>
+      <a href="#landing">
+        <span style="font-size:40px;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+          TechnicBox
+        </span>
+      </a>
+    </h1>
+    <nav class="top-nav">
+      <ul>
+        <li><button onclick="location.href='#mission-statement'"><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">MISSION</span></button></li>
+        <li><button onclick="location.href='#sample-boxes'"><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">SAMPLES</span></button></li>
+        <li><button onclick="location.href='#scaling'"><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">SCALING</span></button></li>
+        <li><button onclick="location.href='#about-us'"><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">ABOUT</span></button></li>
+        <li><button onclick="location.href='#contact-us'"><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">CONTACT</span></button></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1672cb;
+}
+
+html, body {
+  font-family: 'Calendas Plus', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+  height: 100%;
+}
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(22, 112, 203, 0);
+  color: #fff; /* Updated text color */
+  background-color: #1672cb;
+  text-decoration:none;
+}
+
+
+
+
+
+header#showcase h1 a{
+  text-decoration:none;
+  color: inherit;
+  transition: all ease-in-out 250ms;
+}
+
+header#showcase h1 a::after{
+  content:'';
+  position:absolute;
+  display:block;
+  height:0.3em;
+  width:0%;
+  background-color: #000000;
+  bottom:+1.25em;
+  transition: all ease-in-out 250ms;
+}
+
+header#showcase h1 a:hover::after{
+  width:10%;
+}
+
+header#showcase h1 a:hover{
+  color: #000000;
+  transition: all ease-in-out 250ms;
+}
+
+
+
+
+
+
+nav.top-nav ul li button{
+  text-decoration:none;
+  color: inherit;
+  transition: all ease-in-out 250ms;
+}
+
+nav.top-nav ul li button::after{
+  content:'';
+  position:absolute;
+  display:block;
+  /*height:0.3em;*/
+  /*width:0%;*/
+  background-color: #000000;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav.top-nav ul li button:hover::after{
+  width:3.2%;
+}
+
+nav.top-nav ul li button:hover{
+  color: #000000;
+  transition: all ease-in-out 250ms;
+}
+
+
+
+
+
+
+
+
+
+.top-nav {
+  color: #fff;
+}
+
+.top-nav ul {
+  list-style-type: none;
+  margin-left: 100px; /* PLACE TO CHANGE NAV BAR POSITION */
+}
+
+.top-nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.top-nav ul li button {
+  background: none;
+  border: none;
+  color: #1672cb; /* Updated text color */
+  cursor: pointer;
+}
+
+
+.top-nav li a{
+  text-decoration: none;
+}
+
+.top-nav li a::after{
+  content:'';
+  position: absolute;
+  display: block;
+  background-color: white;
+}
+
+
+
+
+
+
+.logo img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  opacity: 0.0;
+  background-color: #ffffff;
+}
+
+.content {
+  margin-bottom: 40px;
+  background-color: #ffffff;
+}
+
+section:last-of-type {
+  background-color: #ffffff;
+}
+
+.container:last-of-type {
+  background-color: #fff;
+}
+
+footer {
+  background-color: #1672cb;
+  color: #fff;;
+  text-align: center;
+  padding: 20px;
+}
+
+h1{color: #ffffff;}
+  h2{color: #ffffff;}
+  p{color: #ffffff;}
+
+#landing img {
+  position: relative;
+  top: 60px;
+}
+
+#landing {
+  margin-top: 0px;
+  height: 88%;
+}
+
+#mission-statement img {
+  position: relative;
+  bottom: 19px;
+}
+
+label {
+  color: #ffffff;
+}
+
+#showcase {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+input[type="text"], input[type="email"], textarea {
+    color: white;
+  }
+
+  </style>
+
+<section id="landing" style="background-color:#1672cb;">
+  <img src="landing1.jpg" alt="slogan">
+</section>
+
+<section id="mission-statement" style="background-color:#1672cb;">
+  <img src="mission1.jpg" alt="mission statement">
+</section>
+  
+<section id="sample-boxes" style="background-color:#1672cb;">
+  <img src="sample-boxes.jpg" alt="sample-boxes content">
+</section>
+
+<section id="scaling" style="background-color:#1672cb;">
+  <img src="scaling.jpg" alt="scaling information">
+</section>
+
+<section id="about-us" style="background-color:#1672cb;">
+  <img src="about-us.jpg" alt="scaling information">
+</section>
+
+<section id="contact-us" style="background-color:#1672cb;">
+  <h2><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size:32px; background-color: #1672cb;">Contact Us</span></h2>
+  <p><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; background-color: #1672cb;">Get in touch:</span></p>
+  
+  <form id="contact-form" style="background-color:#1672cb">
+    <input type="hidden" name="contact_number">
+    <label><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Name: </span></label><br>
+    <input type="text" name="from_name" style="width:300px"><br>
+    <label><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Email: </span></label><br>
+    <input type="email" name="from_email" style="width:300px"><br>
+    <label><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Message: </span></label><br>
+    <textarea name="message" style="width:500px; height:200px"></textarea><br>
+    <input type="submit" value="Send" style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+</form>
+</section>
+
+
+  <!-- Add more sections and content as needed -->
+  
+  <footer style="background-color:#1672cb">
+    <p style="color:#ffffff"><span style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">&copy; 2023 TechnicBox. All rights reserved.</span></p>
+  </footer>
+  
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('TWMUNE03vkyKYCyPg');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        document.getElementById("contact-form").reset();
+                        alert("Message sent successfully.");
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        alert("Message failed to send. Please try again later.");
+                    });
+            });
+        }
+    </script>
